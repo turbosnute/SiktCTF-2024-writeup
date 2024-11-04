@@ -1,5 +1,5 @@
 # SiktCTF-2024-writeup
-My write-up for the Sikt CTF 2024.
+My write-up of Sikt CTF 2024.
 
 ## Welcome
 - [Welcome](Welcome/welcome.md)
