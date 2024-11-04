@@ -31,6 +31,8 @@ Sep 10 11:09:33 sshd[12345]: Accepted password for ctfuser from 192.168.1.10 por
 Sep 10 11:09:59 sshd[12345]: Accepted password for ctfuser from 192.168.1.10 port 2200 ssh2
 ```
 
-FTP challenges.ctf.sikt.no 2121. With no username or password. The flag is in the file 'flag.txt'.
+It was a FTP server running on challenges.ctf.sikt.no 2121, with no username or password. The flag was in the file 'flag.txt'.
+
+It was hard to guess that the server was on challanges.ctf.sikt.no. I actually ended monitoring and decoding the data of `/proc/tcp/` (basically made netstat in python) until I saw a connection to the server and used Python to connect to the server and view the file. It turns out that the server was open to the public and you could just connect to it with a ftp client from your pc.
 
 > Flag: SiktCTF{WHo_is_TH3_Re4L_HaCk3R?}
